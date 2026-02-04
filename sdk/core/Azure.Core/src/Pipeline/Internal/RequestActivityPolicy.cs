@@ -176,6 +176,6 @@ namespace Azure.Core.Pipeline
             _isDistributedTracingEnabled &&
             (s_diagnosticSource.IsEnabled() || IsActivitySourceEnabled);
 
-        private bool IsActivitySourceEnabled => _isDistributedTracingEnabled && s_activitySource.HasListeners();
+        private bool IsActivitySourceEnabled => false;
     }
 }
